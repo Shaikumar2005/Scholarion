@@ -1,0 +1,65 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'sans serif', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #e6ffe6, #ffffff); /* green to white */
+  color: black;
+}
+
+
+header {
+  background: lightgreen;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header .logo h1 {
+  font-size: 2rem;
+}
+
+header .navbar {
+  background-color: lightgreen;
+}
+header .navbar a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  text-transform: capitalize; /* Makes only the first letter uppercase */
+}
+
+header .navbar a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2, .section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: lightgreen;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
