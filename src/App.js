@@ -11,10 +11,10 @@ function App() {
           <h1>Scholarion</h1>
         </div>
         <nav className="navbar">
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#services">SERVICES</a>
-          <a href="#reviewers">REVIEWERS</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#reviewers">Reviewers</a>
         </nav>
       </header>
 
