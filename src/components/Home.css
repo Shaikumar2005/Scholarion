@@ -1,0 +1,193 @@
+/* Home.css */
+
+.home-wrapper {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .nav-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+    background: #f4f6fc;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color:green;
+    color: white;
+    padding: 14px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e76800;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .review-box {
+    text-align: center;
+    width: 220px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  .review-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; /* spacing between cards */
+    padding: 40px 20px;
+    background-color: #ffffff;
+  }
+    
+  
+/* How it works Section */
+.how-it-works {
+    background-color: #f4f6fc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #1f1f1f;
+  }
+  
+  .progress-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .step {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+  }
+  .how-it-works {
+    background-color: #f4f6fc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #1f1f1f;
+  }
+  
+  .progress-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .step {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .step-number {
+    font-weight: bold;
+    margin-right: 8px;
+    color: #000;
+  }
+  .step-button-container {
+    margin-top: 8px;
+    text-align: left;
+  }
+  .step-button-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center; /* centers the button horizontally */
+  }
+  
+  .mini-button-orange {
+    padding: 15px;
+    font-size: 0.8rem;
+    background-color:green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mini-button-orange:hover {
+    background-color: green;
+  }
+  
