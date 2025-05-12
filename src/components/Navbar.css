@@ -2,69 +2,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  font-family: '', sans-serif;
-  font:bold
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  font-family: Arial, sans-serif;
 }
 
-.logo {
-  font-size: 50px;
-  font-weight: 800;
-  color: #2c2c2c;
-  letter-spacing: 0.5px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #2c2c2c;
-  font-size: 17px;
-  font-weight: 600;
-  transition: color 0.2s ease-in-out;
-}
-
-.nav-links li a:hover {
-  color: #ff7a00;
-}
-
-.nav-button {
-  background-color: #ff7a00;
-  color: white;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.nav-button:hover {
-  background-color: #e06800;
-}
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #1a1a1a;
 }
 
 .logo-img {
-  height: 42px;
-  width: auto;
+  height: 35px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a,
+.dropdown-toggle {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  list-style-type: none;  /* optional extra safety */
+  padding: 10px 20px;
+}
+
+
+.dropdown-menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
 }
