@@ -10,7 +10,7 @@ function Home() {
       <section className="hero-section">
       <div className="hero-content">
   <h1>Get Your service: <br /> custom help for students, Research scholars & professionals.</h1>
-  <p>Get a unique, human-written essay to your instructions in 200+ Topics & Domains</p>
+  <p>End-to-End guidance for academic research, writing and publication</p>
   <button className="cta-button">Place an order</button>
 </div>
 
