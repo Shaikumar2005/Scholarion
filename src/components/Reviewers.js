@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Reviewers.css';
 
-// Importing 8 unique images
 import studentImage1 from '../images/Founder & Head.jpg';
 import studentImage2 from '../images/Research Head.jpg';
 import studentImage3 from '../images/Frontend Developer.jpg';
@@ -13,6 +12,8 @@ import industryImage3 from '../images/Founder & Head.jpg';
 import industryImage4 from '../images/Founder & Head.jpg';
 
 function Reviewers() {
+  const [visibleExperience, setVisibleExperience] = useState(null);
+
   const reviewers = {
     students: [
       {
@@ -76,6 +77,28 @@ function Reviewers() {
     ],
   };
 
+  const renderReviewerCard = (reviewer, index) => (
+    <div key={index} className="reviewer-card">
+      <div className="image-container">
+        <img src={reviewer.image} alt={reviewer.name} className="reviewer-image" />
+      </div>
+      <h4 className="name">{reviewer.name}</h4>
+      <p className="college">{reviewer.college}</p>
+      <p className="department">{reviewer.department}</p>
+      <button
+        className="experience-button"
+        onClick={() => setVisibleExperience(visibleExperience === index ? null : index)}
+      >
+        Experience
+      </button>
+      {visibleExperience === index && (
+        <div className="popup">
+          <p>{reviewer.experience}</p>
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div className="reviewers-container">
       <h2>Meet Our Team</h2>
@@ -85,32 +108,16 @@ function Reviewers() {
 
       <h3>Team</h3>
       <div className="reviewers-grid">
-        {reviewers.students.map((reviewer, index) => (
-          <div key={index} className="reviewer-card">
-            <div className="image-container">
-              <img src={reviewer.image} alt={reviewer.name} className="reviewer-image" />
-            </div>
-            <h4 className="name">{reviewer.name}</h4>
-            <p className="college">{reviewer.college}</p>
-            <p className="department">{reviewer.department}</p>
-            <p className="experience">{reviewer.experience}</p>
-          </div>
-        ))}
+        {reviewers.students.map((reviewer, index) =>
+          renderReviewerCard(reviewer, index)
+        )}
       </div>
 
       <h3>Reviewers</h3>
       <div className="reviewers-grid">
-        {reviewers.industry.map((reviewer, index) => (
-          <div key={index} className="reviewer-card">
-            <div className="image-container">
-              <img src={reviewer.image} alt={reviewer.name} className="reviewer-image" />
-            </div>
-            <h4 className="name">{reviewer.name}</h4>
-            <p className="college">{reviewer.college}</p>
-            <p className="department">{reviewer.department}</p>
-            <p className="experience">{reviewer.experience}</p>
-          </div>
-        ))}
+        {reviewers.industry.map((reviewer, index) =>
+          renderReviewerCard(reviewer, reviewers.students.length + index)
+        )}
       </div>
     </div>
   );

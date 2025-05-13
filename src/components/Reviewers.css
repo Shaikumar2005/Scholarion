@@ -1,51 +1,98 @@
 .reviewers-container {
-  padding: 10px;
   text-align: center;
-  font-family: sans-serif;
+  padding: 2rem;
 }
 
 .reviewers-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .reviewer-card {
-  width: 200px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .reviewer-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
 }
 
-.reviewer-card h4 {
-  margin: 8px 0 4px 0;
-  padding: auto;
-  font-size: 1rem;
+.name {
   font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
-.reviewer-card p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #333;
-  line-height: 1.3;
-}
-.team-grid {
-  gap: 10px;     
-  padding: 20px;    /* Reduce gap between cards */
-  margin-top: 10px;  /* Reduce top spacing */
+.college,
+.department {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.2rem 0;
 }
 
-.team-grid .reviewer-card {
-  padding: 10px;     /* Reduce inner spacing */
-  margin: 0;         /* Remove any extra margin */
+.experience-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.experience-button:hover {
+  background-color: darkgreen;
+}
+
+/* Modal Fullscreen */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
